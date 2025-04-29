@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Vendas e Comissões</title>
+    <title>Painel Administrativo</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Painel de Vendas e Comissões</h1>
+        <h1>Painel Administrativo</h1>
         <nav>
             <ul>
+                <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="cadastro-corretores.html">Cadastro de Corretores</a></li>
                 <li><a href="cadastro-vendas.html">Cadastro de Vendas</a></li>
-                <li><a href="dashboard.html">Painel Administrativo</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="introducao">
-        <p>Este é o sistema para gerenciar comissões de vendas. Utilize o menu acima para navegar entre as opções.</p>
+    <section>
+        <h2>Resumo das Vendas e Comissões</h2>
+        <p>Aqui serão exibidos os dados das vendas e comissões.</p>
+        <div id="relatorio-vendas">
+            <!-- Dados de vendas e comissões serão exibidos aqui -->
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2025 Painel de Vendas e Comissões</p>
     </footer>
+
+    <script src="js/dashboard.js"></script>
 </body>
 </html>

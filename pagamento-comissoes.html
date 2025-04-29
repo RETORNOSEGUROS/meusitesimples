@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Vendas e Comissões</title>
+    <title>Pagamento de Comissões</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Painel de Vendas e Comissões</h1>
+        <h1>Pagamento de Comissões</h1>
         <nav>
             <ul>
+                <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="cadastro-corretores.html">Cadastro de Corretores</a></li>
                 <li><a href="cadastro-vendas.html">Cadastro de Vendas</a></li>
                 <li><a href="dashboard.html">Painel Administrativo</a></li>
@@ -18,12 +19,22 @@
         </nav>
     </header>
 
-    <section id="introducao">
-        <p>Este é o sistema para gerenciar comissões de vendas. Utilize o menu acima para navegar entre as opções.</p>
+    <section>
+        <form id="form-pagamento">
+            <label for="corretor">Corretor:</label>
+            <input type="text" id="corretor" name="corretor" required><br><br>
+
+            <label for="valor-pago">Valor Pago:</label>
+            <input type="number" id="valor-pago" name="valor-pago" required><br><br>
+
+            <button type="submit">Registrar Pagamento</button>
+        </form>
     </section>
 
     <footer>
         <p>&copy; 2025 Painel de Vendas e Comissões</p>
     </footer>
+
+    <script src="js/pagamento-comissoes.js"></script>
 </body>
 </html>
